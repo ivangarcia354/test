@@ -3,7 +3,7 @@ export default ({ creditCard, firstName, loading, lastName, telephone }) => (
     <p className={loading ? 'loading' : ''}>
       {firstName} {lastName}
     </p>{' '}
-    //<p className={`telephone ${loading ? 'loading' : ''}`}>{telephone}</p>
+    <p className={`telephone ${loading ? 'loading' : ''}`}>{telephone}</p>
     <p className={`credit-card credit-card-number ${loading ? 'loading' : ''}`}>
       {creditCard && <img src="/icons/visa.svg" />}
       {creditCard}
