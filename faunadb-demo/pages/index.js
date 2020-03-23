@@ -24,7 +24,7 @@ export default () => {
           <h2>Customer Data</h2>
           <div className="table">
             <h4>name</h4>
-            <h4 className="telofono">telephone</h4>
+            <h4 className="telephone">telefono</h4>
             <h4 className="credit-card">credit card</h4>
           </div>
           {data.length > 0 ? (
