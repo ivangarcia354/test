@@ -15,9 +15,9 @@ export default () => {
   return (
     <main>
       <Head>
-        <title>Next.js, FaunaDB and Node.js</title>
+        <title>Next.js, Ivan web</title>
       </Head>
-      <h1>Next.js, FaunaDB and Node.js</h1>
+      <h1>Next.js, Ivan web</h1>
       <hr />
       <div className="container-scroll">
         <div className="container">
