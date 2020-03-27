@@ -11,24 +11,42 @@ export default () => {
       setData(newData)
     }
     getData()
-  }, [])return (
-      <div>
-        <h3>¡Bienvenido!</h3>
-        <TodoList items={this.state.items} />
-        <form onSubmit={this.handleSubmit}>
-          <label htmlFor="new-dni">
-            Por favor ingrese su DNI
-          </label>
-          <input
-            id="new-dni"
-            value={this.state.text}
-          />
-          <button>
-            Loguear 
-          </button>
-        </form>
+  }, [])
+  return (
+    <main>
+      <Head>
+        <title>Bienvenido</title>
+      </Head>
+      <h1>Bienvenido</h1>
+      <hr />
+      <div className="container-scroll">
+        <div className="container">
+          <h2>Customer Data</h2>
+          <div className="table">
+            <h4>name</h4>
+            <h4 className="telephone">telefono</h4>
+            <h4 className="credit-card">credit card</h4>
+          </div>
+          {data.length > 0 ? (
+            data.map(d => (
+              <TableRow
+                key={d.data.telephone}
+                creditCard={d.data.creditCard.number}
+                firstName={d.data.firstName}
+                lastName={d.data.lastName}
+                telephone={d.data.telephone}
+              />
+            ))
+          ) : (
+            <>
+              <TableRow loading />
+              <TableRow loading />
+              <TableRow loading />
+            </>
+          )}
+        </div>
       </div>
-    );
+    </main>
+  )
 }
-
  
