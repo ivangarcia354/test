@@ -38,7 +38,7 @@ export default () => {
         </form>
       </div>
     );
-}
+};
 
  handleChange(e) {
     this.setState({ text: e.target.value });
